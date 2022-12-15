@@ -1,0 +1,76 @@
+.card-characters {
+    width: 100%;
+    max-width: 28rem;
+    .image {
+        width: 100%;
+        height: 38.4rem;
+        margin-bottom: 2.4rem;
+        overflow: hidden;
+        img {
+            transition: transform .3s ease;
+        }
+        border-radius: 0.7rem;
+    }
+    .info {
+        h3 {
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            margin-bottom: 0.4rem;
+            color: #E5E5E5;
+        }
+        span {
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+        }
+    }
+    &:hover {
+        .image {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .image {
+            height: 30.3rem;
+        }
+    }
+    @media (max-width: 560px) {
+        .image {
+            height: 21.3rem;
+            margin-bottom: 0;
+        }
+        .info {
+            display: none;
+        }
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 1.6rem;
+    line-height: 4.1rem;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    border: 1px solid ;
+    img {
+        margin-right: 0.8rem;
+    }
+}
+
+.btn-azul {
+    background-color: #00AEFF;
+    border-color: #00AEFF;
+}
+
+.btnConta {
+    border-color: #ffffff;
+}
